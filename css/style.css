@@ -59,7 +59,7 @@ h2.titulo-mejores{
 .lockup{position:relative;z-index:2;display:inline-block;margin:0 auto}
 .lockup img{width:clamp(240px,42vw,350px);height:auto;display:block}
 
-.lead{max-width:540px;margin:20px auto 0;font-family:var(--sans);font-size:clamp(15px,2vw,17px);color:#3a3a3a;line-height:1.7}
+.lead{max-width:540px;margin:20px auto 0;font-family:var(--sans);font-size:clamp(15px,2vw,17px);color:#3a3a3a;line-height:1.5}
 .lead .ph{color:var(--red);font-weight:600;}
 
 .ganadores-title{margin:52px 0 4px;font-family:var(--sans);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:clamp(22px,3.6vw,28px);text-align:center}
