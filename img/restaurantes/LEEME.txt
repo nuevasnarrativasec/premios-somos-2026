@@ -1,0 +1,8 @@
+FOTOS DE LAS FICHAS — Premios Somos 2026
+=========================================
+Coloca aquí una foto por categoría (.jpg), con el nombre EXACTO indicado en
+"_manifest-fotos.csv" (columna "Nombre de archivo de la foto"). Ejemplos:
+  Mejor Panadería   ->  img/restaurantes/mejor-panaderia.jpg
+  Mejor restaurante ->  img/restaurantes/mejor-restaurante.jpg
+Recomendado: horizontal 4:3, mínimo 800x600 px.
+Si falta una foto, la ficha muestra la inicial del ganador (el diseño no se rompe).

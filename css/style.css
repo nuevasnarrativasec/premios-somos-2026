@@ -1,0 +1,173 @@
+:root{
+  --red:#e11b17;
+  --red-deep:#c0140f;
+  --ink:#141414;
+  --olive:#a39b7a;
+  --olive-d:#8a815f;
+  --sand:#e9e4d8;
+  --sand-2:#efeadf;
+  --paper:#ffffff;
+  --muted:#6b6b6b;
+  --line:#dcdcdc;
+  --sans:"Roboto",system-ui,Arial,sans-serif;
+  --serif:"Playfair Display",Georgia,serif;
+  --body:"Lora",Georgia,serif;
+}
+
+@font-face {
+    font-family: 'Noe Display bold';
+    src: url('../font/NoeDisplay-Bold.woff2') format('woff2'),
+        url('../font/NoeDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:910px;margin:0 auto;padding:0 24px}
+
+/* ---------- Nav ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.topbar .tb-logo{font-family:var(--sans);font-weight:700;letter-spacing:.06em;font-size:14px;text-transform:uppercase}
+.topbar .tb-logo b{color:var(--red)}
+.navlinks{display:flex;gap:6px}
+.navlinks a{font-family:var(--sans);text-decoration:none;font-weight:600;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding:7px 13px;border-radius:2px;transition:.18s}
+.navlinks a:hover{background:var(--ink);color:#fff}
+
+/* ---------- Header / logo lockup ---------- */
+header.masthead{position:relative;overflow:hidden;padding:56px 0 10px;text-align:center}
+h2.titulo-mejores{
+  font-family: 'Noe Display bold';
+  font-size: 2.5rem;
+  line-height: 1.1;
+  max-width: 400px;
+  margin: 30px auto 10px;
+}
+.deco{position:absolute;top:0;pointer-events:none; width:100%;}
+.sq{position:absolute;display:block}
+.sq.a{width:120px;height:120px;background:var(--sand);left:70px;top:95px}
+.sq.b{width:70px;height:70px;background:var(--olive);left:0;top:26px}
+.sq.c{width:120px;height:120px;background:var(--sand);right:0;top:26px}
+.sq.d{width:70px;height:70px;background:var(--olive);right:120px;top:145px}
+@media(max-width:820px){.sq{display:none}}
+
+.lockup{position:relative;z-index:2;display:inline-block;margin:0 auto}
+.lockup img{width:clamp(240px,42vw,350px);height:auto;display:block}
+
+.lead{max-width:540px;margin:20px auto 0;font-family:var(--sans);font-size:clamp(15px,2vw,17px);color:#3a3a3a;line-height:1.7}
+.lead .ph{color:var(--red);font-weight:600;}
+
+.ganadores-title{margin:52px 0 4px;font-family:var(--sans);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:clamp(22px,3.6vw,28px);text-align:center}
+.chev{width:0;height:0;margin:8px auto 0;border-left:11px solid transparent;border-right:11px solid transparent;border-top:12px solid var(--olive)}
+
+/* ---------- Section labels ---------- */
+section{padding:26px 0}
+.sec-label{display:flex;align-items:center;gap:16px;margin:34px 0 30px}
+.sec-label::before,.sec-label::after{content:"";height:1px;background:var(--line);flex:1}
+.sec-label span{font-family:var(--sans);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:clamp(14px,2.4vw,18px);color:var(--ink);white-space:nowrap}
+.sec-label .sm{display:block;font-family:var(--body);font-style:italic;font-weight:400;letter-spacing:0;text-transform:none;font-size:12.5px;color:var(--muted);text-align:center;margin-top:2px}
+
+/* ---------- Grid + fichas ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 26px}
+@media(max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}}
+@media(max-width:520px){.grid{grid-template-columns:minmax(0,1fr)}}
+
+.ficha{position:relative;min-width:0;background:var(--paper);display:flex;flex-direction:column;margin-top:24px}
+
+/* Cabecera de categoría: banda olivo + marco negro que sobresale */
+.cat-header{position:relative;background:var(--olive);padding:0 14px 0;text-align:center}
+.cat-frame{
+  display:inline-block;box-sizing:border-box;max-width:92%;margin-top:-15px;
+  border:3.5px solid var(--ink); background: var(--olive);padding: 18px 18px 9px;
+  font-family:"Noe Display bold",var(--serif);font-weight:800;color:var(--ink);
+  text-transform:uppercase;letter-spacing:.04em;font-size:14px;line-height:1.12;
+}
+.photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:#ddd}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .fallback{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--olive),#7d7454);color:#fff;
+  font-family:var(--serif);font-weight:900;font-size:44px;letter-spacing:.02em;
+}
+.pin{width:0;height:0;margin:0 auto;border-left:12px solid transparent;border-right:12px solid transparent;border-top:16px solid var(--olive)}
+.ficha-body-main{display:flex;flex-direction:column;flex:1;border:1px solid var(--line);border-top:none; max-width: 250px; min-width: 250px;
+    margin: 0 auto;}
+.ficha-body{padding:22px 24px 26px;text-align:left;display:flex;flex-direction:column;flex:1}
+.ficha-name{font-family:"Noe Display bold",var(--serif);font-weight:800;text-transform:uppercase;font-size: 1.2rem;
+    line-height: 1.04;
+    margin: 0;
+    text-align: center;}
+
+/* Instagram como texto serif en negrita (reemplaza el horario) */
+.handle{
+  margin-top:22px;text-decoration:none;overflow-wrap:anywhere;
+  font-family:var(--sans);font-weight:800;font-size:13px;
+  color:var(--ink);letter-spacing:.01em;transition:color .18s;
+  text-align: center;
+}
+.handle:hover{color:var(--red)}
+
+/* Finalistas (solo jurado) */
+.finalistas{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);text-align:left}
+.finalistas .flabel{font-family:var(--sans);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:10.5px;color:var(--olive-d);margin-bottom:6px;text-align:center}
+.finalistas .fnames{font-family:var(--body);font-size:12.5px;color:#555;line-height:1.5;text-align:center}
+
+/* ---------- States ---------- */
+.state{grid-column:1/-1;padding:34px 0;text-align:center;color:var(--muted);font-family:var(--body)}
+.spinner{width:30px;height:30px;border:3px solid var(--line);border-top-color:var(--red);border-radius:50%;margin:0 auto 12px;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.err{color:var(--red-deep)}
+
+/* ---------- Credits ---------- */
+.credits{position:relative;overflow:hidden;background:#E4E3D9;margin-top:56px;padding:70px 24px 60px;text-align:center}
+.credits .watermark{
+      position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    width: min(650px, 128%);
+    pointer-events: none;
+    user-select: none;
+    opacity: .75;
+}
+.credits .watermark img{width:100%;height:auto;display:block}
+.credits .inner{position:relative;z-index:2;max-width:1000px;margin:0 auto; margin-top:110px;}
+.credits h3{ font-family: 'Noe Display bold';font-weight:800;letter-spacing:.02em;font-size:20px;margin:0 0 26px; text-transform: uppercase;}
+.credits .cred{margin:16px 0}
+.credits .cred .role{font-family:var(--serif);font-weight:700;font-size:14.5px}
+.credits .cred .name{font-family:var(--body);font-size:14px;color:#444}
+
+/* Dos columnas: Equipo Somos / Jurados */
+.cred-cols{display:flex;justify-content:space-between;gap:48px;max-width:795px;margin:34px auto 0;text-align:left}
+.cred-col{border-left:1px solid #b7b4a6;padding-left:24px}
+.cred-col--wide{flex:0 1 480px}
+.cred-col:not(.cred-col--wide){flex:0 1 300px}
+.cred-head{font-family:var(--sans);font-weight:700;font-size:16px;color:var(--ink);margin:0 0 22px}
+.cred-list{list-style:none;margin:0;padding:0}
+.cred-list li{font-family:var(--sans);font-weight:400;font-size:16px;color:#2c2c2a;line-height:1.95}
+
+/* Agradecimientos */
+.cred-thanks{margin-top:64px;text-align:center}
+.cred-head--center{margin-bottom:10px}
+.cred-thanks-text{font-family:var(--sans);font-weight:400;font-size:16px;color:#2c2c2a;margin:0}
+
+.credits .made{margin-top:64px;font-family:var(--sans);font-weight:400;font-size:15px;color:#9a968c}
+.credits .made span{display:block;font-family:var(--sans);font-weight:700;color:#87837a;font-size:16px;margin-top:2px}
+
+@media(max-width:720px){
+  .cred-cols{flex-direction:column;gap:32px;max-width:420px}
+  .cred-col--wide,.cred-col:not(.cred-col--wide){flex:1 1 auto}
+  .credits .watermark{
+        width: min(650px, 90%);
+  }
+}
+
+/* ---------- Variación de color: cat-header (banda) y texto de categoría ---------- */
+/* Impares: banda olive + texto negro (por defecto).  Pares: banda negra + texto olive */
+.ficha:nth-child(even) .cat-header{background:var(--ink)}
+.ficha:nth-child(even) .cat-frame{color:#fff;border: 3.5px solid var(--olive); background: var(--ink);}
