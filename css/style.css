@@ -82,7 +82,7 @@ section{padding:26px 0}
 /* Cabecera de categoría: banda olivo + marco negro que sobresale */
 .cat-header{position:relative;background:var(--olive);padding:0 14px 0;text-align:center}
 .cat-frame{
-  display:inline-block;box-sizing:border-box;max-width:92%;margin-top:-15px;
+  display:inline-block;box-sizing:border-box;max-width:92%;min-width: 220px;margin-top:-15px;
   border:3.5px solid var(--ink); background: var(--olive);padding: 18px 18px 9px;
   font-family:"Noe Display bold",var(--serif);font-weight:800;color:var(--ink);
   text-transform:uppercase;letter-spacing:.04em;font-size:14px;line-height:1.12;
