@@ -83,8 +83,8 @@ section{padding:26px 0}
 .cat-header{position:relative;background:var(--olive);padding:0 14px 0;text-align:center}
 .cat-frame{
   display:inline-block;box-sizing:border-box;max-width:92%;min-width: 220px;margin-top:-15px;
-  border:3.5px solid var(--ink); background: var(--olive);padding: 18px 18px 9px;
-  font-family:"Noe Display bold",var(--serif);font-weight:800;color:var(--ink);
+  border:3.5px solid var(--olive); background: var(--ink);padding: 18px 18px 9px;
+  font-family:"Noe Display bold",var(--serif);font-weight:800;color:#fff;
   text-transform:uppercase;letter-spacing:.04em;font-size:14px;line-height:1.12;
 }
 .photo{position:relative;aspect-ratio:4/3;overflow:hidden;background:#ddd}
@@ -169,5 +169,5 @@ section{padding:26px 0}
 
 /* ---------- Variación de color: cat-header (banda) y texto de categoría ---------- */
 /* Impares: banda olive + texto negro (por defecto).  Pares: banda negra + texto olive */
-.ficha:nth-child(even) .cat-header{background:var(--ink)}
+.ficha:nth-child(even) .cat-header{background:var(--olive)}
 .ficha:nth-child(even) .cat-frame{color:#fff;border: 3.5px solid var(--olive); background: var(--ink);}
