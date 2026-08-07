@@ -4,7 +4,7 @@
 const SHEET_ID  = "18E-NKGX77LP4AHHemJhakIKLTrQzcFM3MeStDCNHvVk";
 const TAB_PUB   = "voto-del-publico";
 const TAB_JUR   = "premio-del-jurado";
-const IMG_DIR   = "img/restaurantes"; // fotos locales: img/restaurantes/<slug>.jpg
+const IMG_DIR   = "https://nuevasnarrativasec.github.io/premios-somos-2026/img/restaurantes"; // fotos locales: img/restaurantes/<slug>.jpg
 const IMG_EXT   = "jpg";
 const gvizUrl = (t) => `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(t)}`;
 

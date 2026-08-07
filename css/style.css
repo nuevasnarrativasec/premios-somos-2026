@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'Noe Display bold';
-    src: url('../font/NoeDisplay-Bold.woff2') format('woff2'),
-        url('../font/NoeDisplay-Bold.woff') format('woff');
+    src: url('https://nuevasnarrativasec.github.io/premios-somos-2026/font/NoeDisplay-Bold.woff2') format('woff2'),
+        url('https://nuevasnarrativasec.github.io/premios-somos-2026/font/NoeDisplay-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
