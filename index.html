@@ -1,98 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-   <meta name="robots" content="noindex">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premios Somos 2026 — Los Ganadores</title>
-<meta name="description" content="Los ganadores de los Premios Somos 2026: lo mejor de la gastronomía peruana, elegido por el jurado y por el voto del público.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Playfair+Display:wght@600;700;800;900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://nuevasnarrativasec.github.io/premios-somos-2026/css/style.css?v3">
+    <meta name="robots" content="noindex">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Playfair+Display:wght@600;700;800;900&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css?v5">
+
+
+    <style>
+        /* Ocultar anuncios y elementos no deseados */  
+        
+        body.story{
+            height: auto !important;
+            min-height: inherit !important;
+        }
+
+        #clever-45754-1988799-sticky-footer,    
+        .tp-modal,
+        .tp-backdrop.tp-active,
+        .content_gpt_top_ads, 
+        .sticky-top, 
+        .nav-d__menu.active,
+        #gpt_cover,
+        .content_gpt_top_ads,
+        .skin-template-model0.ads_pushed,
+        .skin-template-model0,
+        #clever-45754-889974-sticky-footer,
+        #clever-45754-1475206-sticky-footer-iframe,
+        #gpt_zocalo, 
+        #clever-45754-sticky-footer-shadow,
+        #browsi_wrapper_0_ai_1_rc_0,
+        #browsi_wrapper_1_ai_1_rc_0,
+        #browsi_wrapper_2_ai_1_rc_0,
+        #browsi_wrapper_3_ai_1_rc_0,
+        #browsi_wrapper_4_ai_1_rc_0,
+        #browsi_wrapper_5_ai_1_rc_0,
+        #browsi_wrapper_6_ai_1_rc_0,
+        #browsi_wrapper_7_ai_1_rc_0,
+        #browsi_wrapper_8_ai_1_rc_0,
+        #browsi_wrapper_9_ai_1_rc_0,
+        #browsi_wrapper_10_ai_1_rc_0,
+        .fs-sticky-footer,
+        .orp-player-wrapper,
+        #clever-45754-sticky-footer,
+        #clever-45754-1475206-sticky-footer-shadow,
+        #elcomercio_zocalo,
+        .cl-container,
+        #merlin-widget-root{
+            display: none !important;
+            height: 0 !important;
+        }   
+        #header-container,
+        .nav-d__main-scroll.scrolled{
+            z-index: 99999999;
+        }
+        #nav-wm-container{
+            position: relative;
+            z-index: 99999999;
+        }
+        .skin-template-model0 {
+            top: 100px !important;
+            z-index: -1 !important;
+        }
+        body{
+            overflow-y: scroll !important;
+        }
+        .content-layout-container {
+            background-color: transparent !important;
+        }
+        .tp-modal-open{
+            overflow: auto !important;
+        }
+    </style>
+
 </head>
 <body>
 
-
 <!-- ===== MASTHEAD ===== -->
 <header class="masthead">
-  <div class="deco">
-    <span class="sq a"></span><span class="sq b"></span>
-    <span class="sq c"></span><span class="sq d"></span>
-  </div>
+    <div class="deco">
+        <span class="sq a"></span><span class="sq b"></span>
+        <span class="sq c"></span><span class="sq d"></span>
+    </div>
 
-  <div class="lockup">
-    <img src="https://nuevasnarrativasec.github.io/premios-somos-2026/img/logo-premios-somos.png" alt="Premios Somos 2026">
-  </div>
+    <div class="lockup">
+        <img src="https://nuevasnarrativasec.github.io/premios-somos-2026/img/logo-premios-somos.png" alt="Premios Somos 2026">
+    </div>
 
-  <h2 class="titulo-mejores">
-   La guía de los mejores lugares para comer
-  </h2>
+    <h2 class="titulo-mejores">
+        La guía de los mejores lugares para comer
+    </h2>
 
-  <p class="lead" id="lead">
-    Descubre a los ganadores de la cuarta edición de este galardón y prepárate para disfrutar de la gastronomía en el Perú.
-  </p>
+    <p class="lead" id="lead">
+        Descubre a los ganadores de la cuarta edición de este galardón y prepárate para disfrutar de la gastronomía en el Perú.
+    </p>
 
-  <div class="ganadores-title">Ganadores</div>
-  <div class="chev"></div>
+    <div class="ganadores-title">Ganadores</div>
+    <div class="chev"></div>
 </header>
 
 <!-- ===== PÚBLICO ===== -->
 <section id="publico">
-  <div class="wrap">
-    <div class="sec-label"><span>Voto del Público</span></div>
-    <div class="grid" id="pub-grid">
-      <div class="state"><div class="spinner"></div>Cargando ganadores del público…</div>
+    <div class="wrap">
+        <div class="sec-label"><span>Voto del Público</span></div>
+        <div class="grid" id="pub-grid">
+            <div class="state"><div class="spinner"></div>Cargando ganadores del público…</div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ===== JURADO ===== -->
 <section id="jurado">
-  <div class="wrap">
-    <div class="sec-label"><span>Premio del Jurado</span></div>
-    <div class="grid" id="jury-grid">
-      <div class="state"><div class="spinner"></div>Cargando ganadores del jurado…</div>
+    <div class="wrap">
+        <div class="sec-label"><span>Premio del Jurado</span></div>
+        <div class="grid" id="jury-grid">
+            <div class="state"><div class="spinner"></div>Cargando ganadores del jurado…</div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ===== CRÉDITOS ===== -->
 <footer class="credits" id="creditos">
-  <div class="watermark"><img src="https://nuevasnarrativasec.github.io/premios-somos-2026/img/logo-comercio-footer.png" alt="El Comercio"></div>
-  <div class="inner">
-    <h3>Créditos</h3>
-    <div class="cred-cols">
-      <div class="cred-col cred-col--wide">
-        <p class="cred-head">Equipo Somos:</p>
-        <ul class="cred-list">
-          <li>Juan Carlos Fangacio (Editor Revista Somos)</li>
-          <li>Samanta Alva Vargas (Productora editorial Revista Somos)</li>
-          <li>Melvyn Arce Ruiz (Coordinadora digital)</li>
-          <li>Diana Gonzales (Redactora)</li>
-          <li>Óscar García (Redactor)</li>
-          <li>Celeste Pérez (Redactor)</li>
-          <li>Pierina Denegri (Redactora)</li>
-          <li>Jorge Chávez Noriega (Redactor)</li>
-        </ul>
-      </div>
-      <div class="cred-col">
-        <p class="cred-head">Jurados:</p>
-        <ul class="cred-list">
-          <li>Marissa Chiappe</li>
-          <li>Hirka Roca Rey</li>
-          <li>Paola Miglio</li>
-          <li>Laura Graner</li>
-          <li>Luis Martín Alzamora</li>
-          <li>Nora Sugobono</li>
-          <li>Pierina Denegri</li>
-        </ul>
-      </div>
-    </div>
-    <div class="cred-thanks">
-      <p class="cred-head cred-head--center">Agradecimientos</p>
-      <p class="cred-thanks-text">Con el auspicio de Backus, Redondos, Wong, Rappi, Intipalka, Finca Rotondo, Mapfre, Omoda</p>
-    </div>
+    <div class="watermark"><img src="https://nuevasnarrativasec.github.io/premios-somos-2026/img/logo-comercio-footer.png" alt="El Comercio"></div>
+    <div class="inner">
+        <h3>Créditos</h3>
+        <div class="cred-cols">
+            <div class="cred-col cred-col--wide">
+                <p class="cred-head">Equipo Somos:</p>
+                <ul class="cred-list">
+                <li>Juan Carlos Fangacio (Editor Revista Somos)</li>
+                <li>Samanta Alva Vargas (Productora editorial Revista Somos)</li>
+                <li>Melvyn Arce Ruiz (Coordinadora digital)</li>
+                <li>Diana Gonzales (Redactora)</li>
+                <li>Óscar García (Redactor)</li>
+                <li>Celeste Pérez (Redactor)</li>
+                <li>Pierina Denegri (Redactora)</li>
+                <li>Jorge Chávez Noriega (Redactor)</li>
+                </ul>
+            </div>
+            <div class="cred-col">
+                <p class="cred-head">Jurados:</p>
+                <ul class="cred-list">
+                <li>Marissa Chiappe</li>
+                <li>Hirka Roca Rey</li>
+                <li>Paola Miglio</li>
+                <li>Laura Graner</li>
+                <li>Luis Martín Alzamora</li>
+                <li>Nora Sugobono</li>
+                <li>Pierina Denegri</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cred-thanks">
+            <p class="cred-head cred-head--center">Agradecimientos</p>
+            <img src="./img/auspiciadores-desktop.png" alt="auspiciadores premios somos 2026" class="auspiciadores-desktop" width="100%">
+            <img src="./img/auspiciadores-movil.png" alt="auspiciadores premios somos 2026" class="auspiciadores-movil" width="100%">
+        </div>
     <div class="made">Especial realizado por<span>Nuevas Narrativas EC</span></div>
   </div>
 </footer>

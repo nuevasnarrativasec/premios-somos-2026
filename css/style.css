@@ -165,9 +165,23 @@ section{padding:26px 0}
   .credits .watermark{
         width: min(650px, 90%);
   }
+
+  .cred-thanks .auspiciadores-desktop{
+    display: none;
+  }
+  .cred-thanks .auspiciadores-movil{
+    display: block;
+  }
 }
 
 /* ---------- Variación de color: cat-header (banda) y texto de categoría ---------- */
 /* Impares: banda olive + texto negro (por defecto).  Pares: banda negra + texto olive */
 .ficha:nth-child(even) .cat-header{background:var(--olive)}
 .ficha:nth-child(even) .cat-frame{color:#fff;border: 3.5px solid var(--olive); background: var(--ink);}
+
+.auspiciadores-desktop{
+  display: block;
+}
+.auspiciadores-movil{
+  display: none;
+}
