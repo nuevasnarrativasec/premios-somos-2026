@@ -172,6 +172,9 @@ section{padding:26px 0}
   .cred-thanks .auspiciadores-movil{
     display: block;
   }
+  .lead{
+        padding: 0 20px;
+  }
 }
 
 /* ---------- Variación de color: cat-header (banda) y texto de categoría ---------- */
